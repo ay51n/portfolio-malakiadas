@@ -1,9 +1,9 @@
 /**
- * MALAKIADAS PURUSHOTHAMAN - PORTFOLIO INTERACTIVITY & I18N
- * Spider-Man Colorways & Digital/Creative/International Business Focus
+ * MALAKIADAS PURUSHOTHAMAN - EDITORIAL PORTFOLIO JAVASCRIPT
+ * Inspired by Lucas Miller Layout + Spider-Man & Acid Lime Theme Toggle
  */
 
-// --- Translation Dictionary (FR & EN) ---
+// --- Translations Dictionary (FR / EN) ---
 const translations = {
   fr: {
     // Nav
@@ -13,128 +13,92 @@ const translations = {
     "nav.skills": "Compétences",
     "nav.portfolio": "Projets",
     "nav.contact": "Contact",
-    "nav.resume_btn": "Voir le CV",
+    "nav.resume_btn": "Curriculum Vitae",
 
     // Hero
-    "hero.status": "Disponible pour emploi à temps partiel à Paris",
-    "hero.greeting": "Bonjour, je suis",
-    "hero.typed_prefix": "Je suis ",
-    "hero.bio": "Étudiant en Master Commerce International à l’ESCE Paris, diplômé en Médias Digitaux (Londres) et Animation (Inde). Passionné par la convergence entre création visuelle et vision commerciale mondiale, je mets mon expertise en Suite Adobe, production audiovisuelle et stratégie internationale au service de projets ambitieux.",
-    "hero.meta_loc": "Paris & Villiers-le-Bel, France",
-    "hero.meta_status": "Master ESCE (2025 – 2026)",
-    "hero.meta_lang": "Anglais, Français, Tamoul",
-    "hero.cta_projects": "Découvrir mes réalisations",
+    "hero.micro": "MÉDIAS DIGITAUX & COMMERCE INTERNATIONAL — ESCE PARIS",
+    "hero.bio": "Je suis <strong>Malakiadas Purushothaman</strong> — étudiant en Master en Commerce International à l’ESCE Paris, diplômé en Médias Digitaux (Londres) et Animation (Inde), concevant des identités de marque percutantes, du motion design et des stratégies d'expansion mondiale.",
+    "hero.cta_projects": "Découvrir mes projets",
     "hero.cta_contact": "Me contacter",
-    "badge.exp": "Créatif & Médias Digitaux",
-    "badge.exp_sub": "Suite Adobe & Production",
-    "badge.master": "Master ESCE Paris",
-    "badge.master_sub": "Commerce International",
+    "hero.cta_resume": "Voir le CV",
 
-    // Stats
-    "stat.countries": "Pays d'études & travail",
-    "stat.experience": "Années de formation & projets",
-    "stat.languages": "Langues parlées",
-    "stat.satisfaction": "Rigueur & Créativité",
+    // Section Titles
+    "sec.about_title": "Profil & Vision",
+    "sec.exp_title": "Expériences Clés",
+    "sec.edu_title": "Formation Académique",
+    "sec.skills_title": "Expertise & Outils",
+    "sec.port_title": "Portfolio & Réalisations",
+    "sec.contact_title": "Entrons en Contact",
 
     // About
-    "about.tag": "Profil Professionnel",
-    "about.title": "Convergence entre Stratégie Commerciale, Médias Digitaux et Créativité",
-    "about.p1": "Actuellement en <strong>Master en Commerce International à l’ESCE Business School – Paris</strong>, je recherche une opportunité professionnelle stimulante à <strong>temps partiel</strong> en parallèle de mon cursus universitaire.",
-    "about.p2": "Mon parcours international m'a conduit de <strong>Bangalore</strong> (Bachelor en Médias Digitaux & Animation) à <strong>Londres</strong> (Master en Médias Digitaux) puis à <strong>Paris</strong>. Cette trajectoire unique combine une expertise pointue en <strong>production graphique et audiovisuelle</strong> avec une compréhension stratégique des <strong>échanges commerciaux internationaux</strong>.",
-    "about.h1_title": "Gestion du Stress",
-    "about.h1_desc": "Sang-froid éprouvé lors des livraisons de projets à forte cadence.",
-    "about.h2_title": "Esprit d'Initiative",
-    "about.h2_desc": "Proactif dans la conception de solutions visuelles innovantes.",
-    "value.val1_title": "Création Digitale & Direction Artistique",
-    "value.val1_desc": "Maîtrise approfondie de la Suite Adobe (Photoshop, Premiere Pro, Illustrator, Lightroom) pour concevoir des supports visuels et vidéos percutants.",
-    "value.val2_title": "Stratégie Internationale & Marchés",
-    "value.val2_desc": "Analyse d'expansion mondiale, marketing digital transfrontalier et négociation interculturelle développés à l'ESCE Paris.",
-    "value.val3_title": "Agilité Multiculturelle",
-    "value.val3_desc": "Capacité d'intégration immédiate dans des environnements internationaux, bilingue anglais avec pratique du français et du tamoul.",
+    "about.p1": "Actuellement en <strong>Master en Commerce International à l’ESCE Business School – Paris</strong>, je combine une solide maîtrise des outils de création digitale avec une vision stratégique du commerce international.",
+    "about.p2": "Mon parcours académique et professionnel s'étend de <strong>Bangalore</strong> (Bachelor Médias Digitaux & Animation) à <strong>Londres</strong> (Master Médias Digitaux) puis à <strong>Paris</strong>. Cette triple culture m'apporte une agilité hors pair, un sens affûté du storytelling et une capacité immédiate d'intégration.",
+    "about.stat_countries": "Pays d'études & travail",
+    "about.stat_experience": "Années de création & études",
+    "about.stat_languages": "Langues parlées",
+    "about.stat_satisfaction": "Rigueur & Excellence",
 
-    // Experience
-    "exp.tag": "Parcours Professionnel",
-    "exp.title": "Expériences Créatives, Digitales & Stratégiques",
-    "exp.desc": "Un parcours axé sur la création graphique, la réalisation multimédia et le développement commercial international.",
-    
-    // Exp 1: Freelance Digital Media
+    // Pillars
+    "pillar.p1_title": "Direction Artistique & Création Digitale",
+    "pillar.p1_desc": "Maîtrise complète de la Suite Adobe (Photoshop, Premiere Pro, Illustrator, Lightroom) pour concevoir des identités de marque et des campagnes multimédias percutantes.",
+    "pillar.p2_title": "Stratégie Commerciale Mondiale",
+    "pillar.p2_desc": "Analyse de marché, études PESTEL, logistique transfrontalière et négociations interculturelles acquises à l'ESCE Business School.",
+    "pillar.p3_title": "Agilité Multiculturelle & Leadership",
+    "pillar.p3_desc": "Polyglotte (anglais courant, français intermédiaire, tamoul langue maternelle), autonome et proactif face aux défis complexes.",
+
+    // Experiences
     "exp.med_role": "Spécialiste Médias Digitaux & Vidéo",
     "exp.med_company": "Projets Multimédia & Freelance",
     "exp.med_date": "2023 – Présent",
     "exp.med_loc": "Londres & Paris",
-    "exp.med_d1": "Production, montage et étalonnage de vidéos dynamiques sous Adobe Premiere Pro et Lightroom.",
-    "exp.med_d2": "Direction artistique et conception d'éléments graphiques pour des campagnes digitales omnicanales.",
-    "exp.med_d3": "Élaboration de narrations visuelles captivantes maximisant l'engagement sur les réseaux sociaux.",
-    "exp.med_d4": "Gestion complète des projets créatifs, du brief client au rendu final haute définition.",
+    "exp.med_d1": "Production, montage et étalonnage vidéo sous Adobe Premiere Pro et Lightroom.",
+    "exp.med_d2": "Direction artistique et conception d'habillages visuels pour campagnes omnicanales.",
+    "exp.med_d3": "Storytelling créatif maximisant la rétention et l'engagement sur les plateformes digitales.",
+    "exp.med_d4": "Gestion autonome des projets, de l'idéation graphique à la livraison des rendus finaux.",
 
-    // Exp 2: Netsteds Interior
     "exp.des_role": "Graphiste & Designer Visuel",
     "exp.des_company": "Netsteds Interior",
     "exp.des_date": "2020 – 2021",
     "exp.des_loc": "Bangalore, Inde",
-    "exp.des_d1": "Création de supports visuels pour la communication de marque et le design d’intérieur.",
-    "exp.des_d2": "Collaboration étroite avec l’équipe marketing pour la production de catalogues et posts sociaux.",
-    "exp.des_d3": "Utilisation avancée des logiciels Adobe (Photoshop, Illustrator) pour les rendus graphiques.",
+    "exp.des_d1": "Création d'identités visuelles, brochures et catalogues de design d'intérieur.",
+    "exp.des_d2": "Collaboration étroite avec les équipes marketing pour la production de contenus publicitaires.",
+    "exp.des_d3": "Utilisation avancée des logiciels Adobe (Photoshop, Illustrator) pour la composition graphique.",
 
-    // Exp 3: ESCE Paris Projects
-    "exp.esce_proj_role": "Consultant Junior en Stratégie Internationale",
-    "exp.esce_proj_company": "ESCE Business School • Projets Académiques",
-    "exp.esce_proj_date": "2025 – 2026",
-    "exp.esce_proj_loc": "Paris, France",
-    "exp.esce_proj_d1": "Études de marché et stratégies d'expansion transfrontalières pour des marques innovantes.",
-    "exp.esce_proj_d2": "Analyses PESTEL, études concurrentielles et identification des opportunités commerciales.",
-    "exp.esce_proj_d3": "Modélisation de prévisions de vente et plans de rentabilité sous Microsoft Excel.",
-    "exp.esce_proj_d4": "Présentations de recommandations stratégiques en contextes bilingues anglais et français.",
+    "exp.esce_role": "Consultant Junior en Stratégie Internationale",
+    "exp.esce_company": "ESCE Business School • Projets Académiques",
+    "exp.esce_date": "2025 – 2026",
+    "exp.esce_loc": "Paris, France",
+    "exp.esce_d1": "Études de marché et stratégie d'implantation transfrontalière pour marques innovantes.",
+    "exp.esce_d2": "Analyses PESTEL, benchmarking concurrentiel et segmentation d'audience.",
+    "exp.esce_d3": "Modélisation de prévisions financières et plans de rentabilité sous Microsoft Excel.",
+    "exp.esce_d4": "Présentation de recommandations stratégiques en contextes bilingues anglais et français.",
 
-    // Exp 4: Animation & Motion
     "exp.anim_role": "Concepteur Motion Graphics & Animation 2D",
     "exp.anim_company": "St. Joseph's College • Projets de Création",
     "exp.anim_date": "2019 – 2021",
     "exp.anim_loc": "Bangalore, Inde",
-    "exp.anim_d1": "Réalisation de storyboards et conception de décors et personnages vectoriels.",
-    "exp.anim_d2": "Animation 2D image par image et composition graphique sous la Suite Adobe.",
-    "exp.anim_d3": "Participation à des projets créatifs d'animation récompensés pour leur originalité visuelle.",
+    "exp.anim_d1": "Conception de storyboards, création de décors vectoriels et animation image par image.",
+    "exp.anim_d2": "Production d'animations numériques sous la Suite Adobe.",
+    "exp.anim_d3": "Participation à des projets créatifs étudiants récompensés pour leur qualité visuelle.",
 
     // Education
-    "edu.tag": "Cursus Universitaire",
-    "edu.title": "Formation Académique Internationale",
-    "edu.desc": "Un parcours d'excellence traversant trois capitales mondiales de l'innovation et du business.",
     "edu.esce_deg": "Master en Commerce International",
-    "edu.esce_sch": "ESCE Business School",
-    "edu.esce_loc": "Paris, France • 2025 – 2026",
-    "edu.esce_desc": "Approfondissement des stratégies de commerce mondial, négociation internationale, supply chain et gestion commerciale interculturelle.",
+    "edu.esce_sch": "ESCE Business School • Paris (2025 – 2026)",
+    "edu.esce_desc": "Commerce international, supply chain, négociation interculturelle et marketing global.",
     "edu.lmu_deg": "Master en Médias Digitaux",
-    "edu.lmu_sch": "London Metropolitan University",
-    "edu.lmu_loc": "Londres, Royaume-Uni • 2023 – 2025",
-    "edu.lmu_desc": "Stratégie de contenu numérique, production vidéo avancée, storytelling multimédia et communication de marque digitale.",
-    "edu.sjc_deg": "Bachelor en Médias Digitaux & Animation",
-    "edu.sjc_sch": "St. Joseph's College",
-    "edu.sjc_loc": "Bangalore, Inde • 2018 – 2021",
-    "edu.sjc_desc": "Fondamentaux de la composition graphique, modélisation 2D/3D, animation, théorie des couleurs et montage audiovisuel.",
+    "edu.lmu_sch": "London Metropolitan University • Londres (2023 – 2025)",
+    "edu.lmu_desc": "Stratégie de contenu numérique, production vidéo avancée et communication de marque.",
+    "edu.sjc_deg": "Bachelor Médias Digitaux & Animation",
+    "edu.sjc_sch": "St. Joseph's College • Bangalore (2018 – 2021)",
+    "edu.sjc_desc": "Composition visuelle, animation 2D/3D, théorie des couleurs et montage audiovisuel.",
 
-    // Skills
-    "skills.tag": "Expertise & Outils",
-    "skills.title": "Compétences & Savoir-Faire",
-    "skills.desc": "Une combinaison rare de créativité numérique, de vision commerciale et de qualités humaines.",
-    "skills.cat_creative": "Outils Créatifs & Digitaux",
-    "skills.cat_mgmt": "Commerce & Stratégie",
-    "skills.cat_langs": "Langues & Savoir-Être",
-    "skills.cert_title": "Certifications Officielles",
-    "skills.cert_delf": "DELF A1 – Diplôme d'Études en Langue Française",
-    "skills.cert_fitness": "Certification Fitness Trainer – ISCC International Sports & Coaching",
-
-    // Portfolio
-    "port.tag": "Réalisations",
-    "port.title": "Portfolio & Études de Cas",
-    "port.desc": "Sélection de réalisations illustrant mes compétences en médias digitaux, design graphique et stratégie commerciale.",
+    // Portfolio Filters
     "port.filter_all": "Tous les projets",
-    "port.filter_creative": "Création & Graphisme",
-    "port.filter_mgmt": "Médias & Motion",
-    "port.filter_business": "Commerce & Stratégie",
+    "port.filter_creative": "Graphisme & Branding",
+    "port.filter_media": "Médias & Motion",
+    "port.filter_strategy": "Stratégie & Commerce",
 
     // Contact
-    "contact.tag": "Discutons Ensemble",
-    "contact.title": "Entrons en Contact",
     "contact.desc": "Disponible immédiatement pour un entretien ou une proposition d'emploi à temps partiel à Paris.",
     "contact.form_name": "Votre Nom & Prénom",
     "contact.form_email": "Adresse Email",
@@ -154,125 +118,89 @@ const translations = {
     "nav.resume_btn": "View Resume",
 
     // Hero
-    "hero.status": "Available for Part-Time Roles in Paris",
-    "hero.greeting": "Hello, I am",
-    "hero.typed_prefix": "I am a ",
-    "hero.bio": "Master's student in International Business at ESCE Paris, with dual degrees in Digital Media (London) and Animation (India). Passionate about blending visual storytelling with global business strategy, I bring advanced Adobe Creative Cloud skills, video editing mastery, and market strategy expertise.",
-    "hero.meta_loc": "Paris & Villiers-le-Bel, France",
-    "hero.meta_status": "Master @ ESCE Paris (2025 – 2026)",
-    "hero.meta_lang": "English, French, Tamil",
-    "hero.cta_projects": "View My Work",
-    "hero.cta_contact": "Get in Touch",
-    "badge.exp": "Digital Media & Creative",
-    "badge.exp_sub": "Adobe Suite & Production",
-    "badge.master": "Master's at ESCE Paris",
-    "badge.master_sub": "International Business",
+    "hero.micro": "DIGITAL MEDIA & GLOBAL COMMERCE — ESCE PARIS",
+    "hero.bio": "I'm <strong>Malakiadas Purushothaman</strong> — an International Business master's student at ESCE Paris with a background in Digital Media (London) & Animation (India), crafting visual identities, motion graphics, and global business strategies.",
+    "hero.cta_projects": "Explore Work",
+    "hero.cta_contact": "Get In Touch",
+    "hero.cta_resume": "View Resume",
 
-    // Stats
-    "stat.countries": "Countries of Study & Work",
-    "stat.experience": "Years of Training & Projects",
-    "stat.languages": "Languages Spoken",
-    "stat.satisfaction": "Rigor & Creativity",
+    // Section Titles
+    "sec.about_title": "Profile & Vision",
+    "sec.exp_title": "Key Experience",
+    "sec.edu_title": "Higher Education",
+    "sec.skills_title": "Skills & Toolkit",
+    "sec.port_title": "Featured Work",
+    "sec.contact_title": "Let's Connect",
 
     // About
-    "about.tag": "Professional Profile",
-    "about.title": "Bridging Business Strategy, Digital Media & Creative Vision",
-    "about.p1": "Currently pursuing a <strong>Master in International Business at ESCE Business School – Paris</strong>, I am actively seeking a rewarding <strong>part-time position</strong> alongside my university studies.",
-    "about.p2": "My international journey spans <strong>Bangalore</strong> (Bachelor's in Digital Media & Animation), <strong>London</strong> (Master's in Digital Media), and now <strong>Paris</strong>. This unique background bridges high-level <strong>digital content creation</strong> with sharp strategic understanding of <strong>global business trade</strong>.",
-    "about.h1_title": "Stress Resilience",
-    "about.h1_desc": "Proven composure delivering high-tempo creative campaigns.",
-    "about.h2_title": "Proactive Initiative",
-    "about.h2_desc": "Constantly innovating in visual design and digital storytelling.",
-    "value.val1_title": "Digital Creation & Art Direction",
-    "value.val1_desc": "Advanced proficiency across the Adobe Creative Cloud (Photoshop, Premiere Pro, Illustrator, Lightroom) to craft impactful media assets.",
-    "value.val2_title": "International Business & Strategy",
-    "value.val2_desc": "Global market entry analysis, cross-border digital marketing campaigns, and intercultural negotiation honed at ESCE Paris.",
-    "value.val3_title": "Multicultural Agility",
-    "value.val3_desc": "Effortless collaboration across international teams, fluent English speaker with French and Tamil fluency.",
+    "about.p1": "Currently pursuing a <strong>Master in International Business at ESCE Business School – Paris</strong>, I combine creative digital execution with strategic acumen in global commerce.",
+    "about.p2": "My international trajectory spans <strong>Bangalore</strong> (Bachelor's in Digital Media & Animation), <strong>London</strong> (Master's in Digital Media), and now <strong>Paris</strong>. This multicultural background brings sharp adaptability, visual storytelling excellence, and global trade fluency.",
+    "about.stat_countries": "Countries of Study & Work",
+    "about.stat_experience": "Years of Training & Projects",
+    "about.stat_languages": "Languages Spoken",
+    "about.stat_satisfaction": "Rigor & Excellence",
 
-    // Experience
-    "exp.tag": "Career Journey",
-    "exp.title": "Creative, Digital & Strategic Experience",
-    "exp.desc": "A dedicated trajectory blending visual communication, digital content production, and global business planning.",
-    
-    // Exp 1: Freelance Digital Media
+    // Pillars
+    "pillar.p1_title": "Art Direction & Digital Creation",
+    "pillar.p1_desc": "Proficiency across Adobe Creative Cloud (Photoshop, Premiere Pro, Illustrator, Lightroom) to produce high-impact visual identities and campaigns.",
+    "pillar.p2_title": "Global Business Strategy",
+    "pillar.p2_desc": "Cross-border expansion feasibility, PESTEL analysis, supply chain dynamics, and intercultural negotiation honed at ESCE Paris.",
+    "pillar.p3_title": "Multicultural Agility & Drive",
+    "pillar.p3_desc": "Trilingual (fluent English, intermediate French, native Tamil), proactive initiative, and team leadership across diverse settings.",
+
+    // Experiences
     "exp.med_role": "Digital Media & Video Specialist",
     "exp.med_company": "Multimedia Projects & Freelance",
     "exp.med_date": "2023 – Present",
     "exp.med_loc": "London & Paris",
-    "exp.med_d1": "Production, dynamic video editing, and color grading using Adobe Premiere Pro and Lightroom.",
-    "exp.med_d2": "Art direction and visual design for cross-platform digital brand campaigns.",
-    "exp.med_d3": "Developing compelling visual narratives designed to maximize social media engagement and reach.",
+    "exp.med_d1": "Video production, dynamic editing, and color grading in Adobe Premiere Pro and Lightroom.",
+    "exp.med_d2": "Art direction and visual design assets for cross-platform digital brand campaigns.",
+    "exp.med_d3": "Compelling visual storytelling designed to maximize audience retention and reach.",
     "exp.med_d4": "End-to-end creative management from initial design brief to final high-definition delivery.",
 
-    // Exp 2: Netsteds Interior
     "exp.des_role": "Graphic Designer & Visual Communicator",
     "exp.des_company": "Netsteds Interior",
     "exp.des_date": "2020 – 2021",
     "exp.des_loc": "Bangalore, India",
-    "exp.des_d1": "Designed promotional and brand identity assets for marketing and interior design clients.",
-    "exp.des_d2": "Worked in close collaboration with the marketing team on catalog layouts and digital media.",
-    "exp.des_d3": "Leveraged Adobe Photoshop & Illustrator for high-fidelity graphic production.",
+    "exp.des_d1": "Created brand collateral, print catalogs, and digital interior design campaigns.",
+    "exp.des_d2": "Collaborated closely with marketing teams on social posts and editorial advertising.",
+    "exp.des_d3": "Utilized Adobe Photoshop & Illustrator for high-fidelity vector layouts.",
 
-    // Exp 3: ESCE Paris Projects
-    "exp.esce_proj_role": "Junior Consultant – International Strategy",
-    "exp.esce_proj_company": "ESCE Business School • Academic Projects",
-    "exp.esce_proj_date": "2025 – 2026",
-    "exp.esce_proj_loc": "Paris, France",
-    "exp.esce_proj_d1": "Conducted market feasibility and European expansion blueprints for consumer brands.",
-    "exp.esce_proj_d2": "Performed PESTEL research, competitor benchmarks, and consumer target segmentation.",
-    "exp.esce_proj_d3": "Built quantitative sales forecasts and margin projections using Microsoft Excel.",
-    "exp.esce_proj_d4": "Delivered strategic business presentations in bilingual English and French environments.",
+    "exp.esce_role": "Junior Consultant – International Strategy",
+    "exp.esce_company": "ESCE Business School • Academic Projects",
+    "exp.esce_date": "2025 – 2026",
+    "exp.esce_loc": "Paris, France",
+    "exp.esce_d1": "Conducted market feasibility and cross-border expansion blueprints for consumer brands.",
+    "exp.esce_d2": "Executed PESTEL frameworks, competitor benchmarks, and audience segmentation.",
+    "exp.esce_d3": "Built quantitative sales forecasts and margin projections using Microsoft Excel.",
+    "exp.esce_d4": "Delivered strategic business presentations in bilingual English and French settings.",
 
-    // Exp 4: Animation & Motion
     "exp.anim_role": "Motion Graphics & 2D Animation Designer",
     "exp.anim_company": "St. Joseph's College • Creative Projects",
     "exp.anim_date": "2019 – 2021",
     "exp.anim_loc": "Bangalore, India",
-    "exp.anim_d1": "Designed storyboards, character concept art, and vector environments.",
-    "exp.anim_d2": "Executed frame-by-frame 2D animation and multimedia composition in Adobe Creative Suite.",
-    "exp.anim_d3": "Collaborated on student animated short films recognized for artistic and narrative quality.",
+    "exp.anim_d1": "Crafted storyboards, vector character designs, and frame-by-frame 2D animation.",
+    "exp.anim_d2": "Produced digital motion graphics leveraging the Adobe Creative Suite.",
+    "exp.anim_d3": "Contributed to award-winning student animated shorts recognized for artistic composition.",
 
     // Education
-    "edu.tag": "Academic Qualifications",
-    "edu.title": "Global Higher Education",
-    "edu.desc": "Academic foundation spanning three major cultural and economic world capitals.",
     "edu.esce_deg": "Master in International Business",
-    "edu.esce_sch": "ESCE Business School",
-    "edu.esce_loc": "Paris, France • 2025 – 2026",
-    "edu.esce_desc": "Global market expansion strategies, international trade regulations, supply chain dynamics, and intercultural negotiation.",
+    "edu.esce_sch": "ESCE Business School • Paris (2025 – 2026)",
+    "edu.esce_desc": "International trade, cross-border logistics, commercial negotiation, and global marketing.",
     "edu.lmu_deg": "Master in Digital Media",
-    "edu.lmu_sch": "London Metropolitan University",
-    "edu.lmu_loc": "London, United Kingdom • 2023 – 2025",
-    "edu.lmu_desc": "Digital content strategy, advanced video editing, multimedia storytelling, and brand media campaigns.",
+    "edu.lmu_sch": "London Metropolitan University • London (2023 – 2025)",
+    "edu.lmu_desc": "Digital content strategy, advanced video editing, multimedia storytelling, and brand media.",
     "edu.sjc_deg": "Bachelor in Digital Media & Animation",
-    "edu.sjc_sch": "St. Joseph's College",
-    "edu.sjc_loc": "Bangalore, India • 2018 – 2021",
-    "edu.sjc_desc": "Visual arts fundamentals, 2D/3D modeling, digital animation, color harmony, and motion graphics production.",
+    "edu.sjc_sch": "St. Joseph's College • Bangalore (2018 – 2021)",
+    "edu.sjc_desc": "Visual arts fundamentals, 2D/3D modeling, color theory, and video editing.",
 
-    // Skills
-    "skills.tag": "Toolkit & Expertise",
-    "skills.title": "Skills & Competencies",
-    "skills.desc": "A well-rounded profile bridging creative design, business acumen, and people skills.",
-    "skills.cat_creative": "Digital & Creative Suite",
-    "skills.cat_mgmt": "Business & Strategy",
-    "skills.cat_langs": "Languages & Soft Skills",
-    "skills.cert_title": "Official Certifications",
-    "skills.cert_delf": "DELF A1 – Diplôme d'Études en Langue Française",
-    "skills.cert_fitness": "Fitness Trainer Certification – ISCC International Sports & Coaching",
-
-    // Portfolio
-    "port.tag": "Case Studies",
-    "port.title": "Featured Projects & Work",
-    "port.desc": "A curated showcase of digital media, visual branding, and international business strategy.",
+    // Portfolio Filters
     "port.filter_all": "All Projects",
-    "port.filter_creative": "Creative & Design",
-    "port.filter_mgmt": "Media & Motion",
-    "port.filter_business": "Business & Strategy",
+    "port.filter_creative": "Graphic & Branding",
+    "port.filter_media": "Media & Motion",
+    "port.filter_strategy": "Strategy & Business",
 
     // Contact
-    "contact.tag": "Let's Connect",
-    "contact.title": "Get In Touch",
     "contact.desc": "Available immediately for interviews and part-time opportunities in Paris.",
     "contact.form_name": "Your Full Name",
     "contact.form_email": "Email Address",
@@ -283,46 +211,51 @@ const translations = {
   }
 };
 
-// --- Roles for the dynamic typing effect ---
-const typedRoles = {
-  fr: [
-    "Étudiant Master ESCE Paris",
-    "Spécialiste Médias Digitaux",
-    "Graphiste & Créateur Visuel",
-    "Stratège Commerce International"
-  ],
-  en: [
-    "International Business Student",
-    "Digital Media Specialist",
-    "Graphic & Visual Designer",
-    "Global Strategy Consultant"
-  ]
-};
-
-// Current language state
+// Current language state & theme
 let currentLang = localStorage.getItem('site_lang') || 'fr';
+let currentTheme = localStorage.getItem('site_theme') || 'spiderman';
 
-// --- Initialization on DOM Load ---
+// --- Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
+  setupThemeToggle();
   setupLanguageSwitcher();
-  setupTypingEffect();
-  setupNavbar();
+  setupDrawerMenu();
   setupFilters();
   setupModals();
   setupClipboard();
   setupContactForm();
   applyLanguage(currentLang);
+  applyTheme(currentTheme);
 });
 
-// --- Language Switcher Logic ---
+// --- Theme Switcher (Spider-Man / Acid Lime) ---
+function setupThemeToggle() {
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (!toggleBtn) return;
+
+  toggleBtn.addEventListener('click', () => {
+    currentTheme = (currentTheme === 'spiderman') ? 'acid' : 'spiderman';
+    localStorage.setItem('site_theme', currentTheme);
+    applyTheme(currentTheme);
+    showToast(currentTheme === 'acid' ? '⚡ Mode Acid Lime activé' : '🕷️ Mode Spider-Man activé');
+  });
+}
+
+function applyTheme(theme) {
+  if (theme === 'acid') {
+    document.body.classList.add('theme-acid');
+  } else {
+    document.body.classList.remove('theme-acid');
+  }
+}
+
+// --- Language Switcher ---
 function setupLanguageSwitcher() {
   const frBtn = document.getElementById('lang-fr');
   const enBtn = document.getElementById('lang-en');
 
-  if (!frBtn || !enBtn) return;
-
-  frBtn.addEventListener('click', () => switchLanguage('fr'));
-  enBtn.addEventListener('click', () => switchLanguage('en'));
+  if (frBtn) frBtn.addEventListener('click', () => switchLanguage('fr'));
+  if (enBtn) enBtn.addEventListener('click', () => switchLanguage('en'));
 }
 
 function switchLanguage(lang) {
@@ -335,7 +268,6 @@ function applyLanguage(lang) {
   const dict = translations[lang];
   if (!dict) return;
 
-  // Update button states
   const frBtn = document.getElementById('lang-fr');
   const enBtn = document.getElementById('lang-en');
   if (frBtn && enBtn) {
@@ -343,7 +275,6 @@ function applyLanguage(lang) {
     enBtn.classList.toggle('active', lang === 'en');
   }
 
-  // Update elements with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
@@ -351,109 +282,50 @@ function applyLanguage(lang) {
     }
   });
 
-  // Update placeholder attributes if any
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const key = el.getAttribute('data-i18n-ph');
     if (dict[key]) {
       el.setAttribute('placeholder', dict[key]);
     }
   });
-
-  // Restart typing effect with new language list
-  resetTypingEffect();
 }
 
-// --- Typing Effect ---
-let typingTimeout = null;
-let roleIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+// --- Slide-out Drawer Menu ---
+function setupDrawerMenu() {
+  const openBtn = document.getElementById('menu-open-btn');
+  const closeBtn = document.getElementById('drawer-close-btn');
+  const drawer = document.getElementById('drawer-menu');
 
-function setupTypingEffect() {
-  startTyping();
-}
+  if (!drawer) return;
 
-function resetTypingEffect() {
-  clearTimeout(typingTimeout);
-  roleIndex = 0;
-  charIndex = 0;
-  isDeleting = false;
-  startTyping();
-}
-
-function startTyping() {
-  const typedEl = document.getElementById('typed-text');
-  if (!typedEl) return;
-
-  const roles = typedRoles[currentLang] || typedRoles.en;
-  const currentRole = roles[roleIndex % roles.length];
-
-  if (isDeleting) {
-    typedEl.textContent = currentRole.substring(0, charIndex - 1);
-    charIndex--;
-  } else {
-    typedEl.textContent = currentRole.substring(0, charIndex + 1);
-    charIndex++;
+  if (openBtn) {
+    openBtn.addEventListener('click', () => drawer.classList.add('open'));
   }
 
-  let delay = isDeleting ? 40 : 80;
-
-  if (!isDeleting && charIndex === currentRole.length) {
-    delay = 2000;
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    roleIndex++;
-    delay = 400;
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => drawer.classList.remove('open'));
   }
 
-  typingTimeout = setTimeout(startTyping, delay);
-}
-
-// --- Navbar Behavior ---
-function setupNavbar() {
-  const navbar = document.querySelector('.navbar');
-  const mobileToggle = document.getElementById('mobile-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+  drawer.querySelectorAll('.drawer-link').forEach(link => {
+    link.addEventListener('click', () => drawer.classList.remove('open'));
   });
-
-  if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      mobileToggle.textContent = navMenu.classList.contains('open') ? '✕' : '☰';
-    });
-
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        if (mobileToggle) mobileToggle.textContent = '☰';
-      });
-    });
-  }
 }
 
-// --- Project Portfolio Filtering ---
+// --- Filter Projects ---
 function setupFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const filterBtns = document.querySelectorAll('.proj-filter-btn');
+  const projectCards = document.querySelectorAll('.proj-card-editorial');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      const filterValue = btn.getAttribute('data-filter');
+      const filterVal = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
+        const cat = card.getAttribute('data-category');
+        if (filterVal === 'all' || cat === filterVal) {
           card.style.display = 'flex';
           setTimeout(() => {
             card.style.opacity = '1';
@@ -471,7 +343,7 @@ function setupFilters() {
   });
 }
 
-// --- Modal System for Projects & Resume ---
+// --- Project Modals Data ---
 const projectData = {
   1: {
     titleFr: "Branding & Visuels d'Intérieur – Netsteds Interior",
@@ -537,12 +409,12 @@ const projectData = {
 
 function setupModals() {
   const modal = document.getElementById('project-modal');
-  const closeBtn = document.getElementById('modal-close');
+  const closeBtn = document.getElementById('modal-close-btn');
   const modalBody = document.getElementById('modal-details');
 
   if (!modal) return;
 
-  document.querySelectorAll('.project-card').forEach(card => {
+  document.querySelectorAll('.proj-card-editorial').forEach(card => {
     card.addEventListener('click', () => {
       const id = card.getAttribute('data-id');
       const item = projectData[id];
@@ -555,30 +427,30 @@ function setupModals() {
 
       modalBody.innerHTML = `
         <div style="margin-bottom: 1.5rem;">
-          <span class="project-badge-top" style="position: static; display: inline-block; margin-bottom: 0.8rem;">${tag}</span>
-          <h2 style="font-size: 1.8rem; margin-bottom: 0.8rem;">${title}</h2>
-          <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7;">${desc}</p>
+          <span class="proj-thumb-tag" style="position: static; display: inline-block; margin-bottom: 0.8rem;">${tag}</span>
+          <h2 style="font-family: var(--font-display); font-size: 2.2rem; color: #ffffff; margin-bottom: 0.8rem;">${title}</h2>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7;">${desc}</p>
         </div>
 
         <div style="margin-bottom: 1.8rem;">
-          <h4 style="font-size: 1.05rem; margin-bottom: 0.8rem; color: var(--accent-primary);">
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.8rem; color: var(--accent-primary);">
             ${isFr ? 'Points Clés & Résultats' : 'Key Highlights & Metrics'}
           </h4>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
             ${item.metrics.map(m => `
-              <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-primary); font-size: 0.95rem;">
-                <span style="color: var(--accent-primary);">✔</span> ${m}
+              <li style="display: flex; align-items: center; gap: 0.6rem; color: #ffffff; font-size: 0.95rem;">
+                <span style="color: var(--accent-primary);">✦</span> ${m}
               </li>
             `).join('')}
           </ul>
         </div>
 
         <div>
-          <h4 style="font-size: 1.05rem; margin-bottom: 0.8rem; color: var(--accent-primary);">
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.8rem; color: var(--accent-primary);">
             ${isFr ? 'Compétences & Outils Mobilisés' : 'Skills & Tools Leveraged'}
           </h4>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            ${item.tools.map(t => `<span class="timeline-tag">${t}</span>`).join('')}
+            ${item.tools.map(t => `<span class="exp-pill-tag">${t}</span>`).join('')}
           </div>
         </div>
       `;
@@ -587,17 +459,12 @@ function setupModals() {
     });
   });
 
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-  }
-
+  if (closeBtn) closeBtn.addEventListener('click', () => modal.classList.remove('active'));
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-    }
+    if (e.target === modal) modal.classList.remove('active');
   });
 
-  // Resume Modal Setup
+  // Resume Modal
   const resumeModal = document.getElementById('resume-modal');
   const openResumeBtn = document.getElementById('view-resume-btn');
   const openHeroResumeBtn = document.getElementById('hero-resume-btn');
@@ -620,71 +487,52 @@ function setupModals() {
   }
 }
 
-// --- Copy to Clipboard and Toast Notification ---
+// --- Toast & Clipboard ---
 function showToast(message) {
   let toast = document.getElementById('site-toast');
   if (!toast) {
     toast = document.createElement('div');
     toast.id = 'site-toast';
-    toast.className = 'toast';
+    toast.className = 'toast-notice';
     document.body.appendChild(toast);
   }
 
-  toast.innerHTML = `
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-    </svg>
-    <span>${message}</span>
-  `;
-
+  toast.innerHTML = `<span>✦</span><span>${message}</span>`;
   toast.classList.add('show');
-  setTimeout(() => {
-    toast.classList.remove('show');
-  }, 3200);
+  setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
 function setupClipboard() {
-  document.querySelectorAll('.copy-btn').forEach(btn => {
+  document.querySelectorAll('.contact-copy-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const textToCopy = btn.getAttribute('data-copy');
-      if (!textToCopy) return;
+      const text = btn.getAttribute('data-copy');
+      if (!text) return;
 
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        const msg = currentLang === 'fr' 
-          ? `Copié : ${textToCopy}` 
-          : `Copied: ${textToCopy}`;
-        showToast(msg);
-      }).catch(() => {
-        showToast(`Copied: ${textToCopy}`);
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(currentLang === 'fr' ? `Copié : ${text}` : `Copied: ${text}`);
       });
     });
   });
 }
 
-// --- Contact Form Submission Simulator ---
+// --- Contact Form ---
 function setupContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    const orig = btn.innerHTML;
 
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = `<span>⏳ ${currentLang === 'fr' ? 'Envoi en cours...' : 'Sending...'}</span>`;
+    btn.disabled = true;
+    btn.innerHTML = currentLang === 'fr' ? 'Envoi en cours...' : 'Sending...';
 
     setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
+      btn.disabled = false;
+      btn.innerHTML = orig;
       form.reset();
-
-      const successMsg = currentLang === 'fr'
-        ? "Merci ! Votre message a bien été envoyé. Je vous répondrai très rapidement."
-        : "Thank you! Your message has been sent. I will respond promptly.";
-      showToast(successMsg);
-    }, 1000);
+      showToast(currentLang === 'fr' ? "Merci ! Message envoyé avec succès." : "Thank you! Message sent successfully.");
+    }, 900);
   });
 }

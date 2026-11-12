@@ -3,1089 +3,747 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malakiadas Purushothaman | Portfolio Digital & Commerce International</title>
-  <meta name="description" content="Portfolio professionnel de Malakiadas Purushothaman - Étudiant Master en Commerce International (ESCE Paris), expert en Médias Digitaux et Création Graphique.">
-  
-  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <title>Malakiadas Purushothaman — Digital Media & International Business</title>
+  <meta name="description" content="Portfolio éditorial de Malakiadas Purushothaman - Étudiant Master en Commerce International (ESCE Paris), expert en Médias Digitaux et Création Graphique.">
+
+  <!-- Google Fonts: Bebas Neue, Plus Jakarta Sans, Caveat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Background Ambient Lights (Spider-Man Dual Glow: Red & Blue) -->
-  <div class="ambient-glow ambient-glow-1"></div>
-  <div class="ambient-glow ambient-glow-2"></div>
-  <div class="ambient-glow ambient-glow-3"></div>
-  <div class="bg-grid"></div>
+  <!-- Full Page Wrapper with Left Vertical Accent Strip -->
+  <div class="page-wrapper">
+    
+    <!-- Iconic Vertical Accent Bar (Left) -->
+    <aside class="side-accent-strip" aria-hidden="true"></aside>
 
-  <!-- ==========================================================================
-       HEADER & NAVIGATION
-       ========================================================================== -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand-logo">
-        <div class="brand-monogram">MP</div>
-        <div>
-          <span>Malakiadas P.</span>
-          <span class="brand-title-sub">ESCE Paris • Digital & Strategy</span>
-        </div>
-      </a>
+    <!-- Main Content Area (Right) -->
+    <div class="main-content-wrapper">
 
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about" class="nav-link" data-i18n="nav.about">À Propos</a></li>
-        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
-        <li><a href="#education" class="nav-link" data-i18n="nav.education">Formation</a></li>
-        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
-        <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Projets</a></li>
-        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <!-- Language Switcher -->
-        <div class="lang-toggle">
-          <button class="lang-btn active" id="lang-fr">FR</button>
-          <button class="lang-btn" id="lang-en">EN</button>
-        </div>
-
-        <!-- Quick Resume Modal Trigger -->
-        <button class="btn btn-outline" id="view-resume-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-            <polyline points="14 2 14 8 20 8"></polyline>
-            <line x1="16" y1="13" x2="8" y2="13"></line>
-            <line x1="16" y1="17" x2="8" y2="17"></line>
-            <polyline points="10 9 9 9 8 9"></polyline>
-          </svg>
-          <span data-i18n="nav.resume_btn">Voir le CV</span>
+      <!-- ==========================================================================
+           TOP NAVBAR (Minimalist Hamburger, Signature, Theme Toggle & CTA)
+           ========================================================================== -->
+      <header class="top-navbar">
+        <!-- Left: Hamburger Menu -->
+        <button class="nav-menu-toggle" id="menu-open-btn" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
-        <!-- Mobile Toggle Button -->
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">☰</button>
-      </div>
-    </div>
-  </header>
+        <!-- Center: Signature Monogram -->
+        <a href="#hero" class="nav-signature">mp</a>
 
-  <main>
-    <!-- ==========================================================================
-         HERO SECTION
-         ========================================================================== -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-grid">
-        <!-- Hero Text Content -->
-        <div class="hero-content">
-          <div class="hero-greeting">
-            <div class="status-pill">
-              <span class="status-dot"></span>
-              <span data-i18n="hero.status">Disponible pour emploi à temps partiel à Paris</span>
+        <!-- Right: Theme Switch, Language & Action Pill -->
+        <div class="nav-right-actions">
+          <!-- Theme Switcher (Spider-Man / Acid Lime) -->
+          <div class="theme-switch-wrap" title="Basculer entre Spider-Man et Acid Lime">
+            <div class="theme-toggle-btn" id="theme-toggle" role="button" tabindex="0" aria-label="Changer de thème">
+              <div class="theme-toggle-handle"></div>
             </div>
           </div>
 
-          <h1 class="hero-name">
-            <span class="gradient-text">MALAKIADAS</span>
-            <span>PURUSHOTHAMAN</span>
-          </h1>
-
-          <div class="hero-subtitle">
-            <span data-i18n="hero.typed_prefix">Je suis </span>
-            <span class="typed-role" id="typed-text">Étudiant Master ESCE Paris</span>
+          <!-- Language Switcher -->
+          <div class="lang-switch-pill">
+            <button class="lang-opt-btn active" id="lang-fr">FR</button>
+            <button class="lang-opt-btn" id="lang-en">EN</button>
           </div>
 
-          <p class="hero-bio" data-i18n="hero.bio">
-            Étudiant en Master Commerce International à l’ESCE Paris, diplômé en Médias Digitaux (Londres) et Animation (Inde). Passionné par la convergence entre création visuelle et vision commerciale mondiale, je mets mon expertise en Suite Adobe, production audiovisuelle et stratégie internationale au service de projets ambitieux.
-          </p>
+          <!-- Pill Button (CV / Contact) -->
+          <button class="top-pill-btn" id="view-resume-btn" data-i18n="nav.resume_btn">
+            Curriculum Vitae
+          </button>
+        </div>
+      </header>
 
-          <!-- Quick Meta Badges -->
-          <div class="hero-quick-meta">
-            <div class="meta-chip">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span data-i18n="hero.meta_loc">Paris & Villiers-le-Bel, France</span>
-            </div>
-            <div class="meta-chip">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <span data-i18n="hero.meta_status">Master ESCE (2025 – 2026)</span>
-            </div>
-            <div class="meta-chip">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
-              <span data-i18n="hero.meta_lang">Anglais, Français, Tamoul</span>
-            </div>
-          </div>
+      <!-- ==========================================================================
+           HERO SECTION (LUCAS MILLER INSPIRED ICONIC LAYOUT)
+           ========================================================================== -->
+      <section class="hero-editorial" id="hero">
+        <!-- Micro Tag -->
+        <div class="hero-micro-tag" data-i18n="hero.micro">
+          MÉDIAS DIGITAUX & COMMERCE INTERNATIONAL — ESCE PARIS
+        </div>
 
-          <!-- Hero Action Buttons -->
-          <div class="hero-cta">
-            <a href="#portfolio" class="btn btn-primary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-              <span data-i18n="hero.cta_projects">Découvrir mes réalisations</span>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <span data-i18n="hero.cta_contact">Me contacter</span>
-            </a>
-            <button class="btn btn-outline" id="hero-resume-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-              <span data-i18n="nav.resume_btn">Voir le CV</span>
-            </button>
+        <!-- Giant Typography Lockup with Floating Intersecting Portrait Capsule -->
+        <div class="hero-headline-wrap">
+          <h1 class="hero-giant-word">MALAKIADAS</h1>
+          <h1 class="hero-giant-word">PURUSHOTHAMAN</h1>
+
+          <!-- Floating Portrait Capsule -->
+          <div class="hero-portrait-capsule">
+            <img src="assets/images/profile.jpg" alt="Malakiadas Purushothaman" class="hero-portrait-img">
           </div>
         </div>
 
-        <!-- Hero Photo Frame with Floating Badges (Spider-Man Duo Glow) -->
-        <div class="hero-visual">
-          <div class="portrait-wrapper">
-            <div class="portrait-inner">
-              <img src="assets/images/profile.jpg" alt="Malakiadas Purushothaman" class="portrait-img">
-            </div>
+        <!-- 4-Point Star Sparkle -->
+        <div class="hero-sparkle" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+          </svg>
+        </div>
 
-            <!-- Floating Badges -->
-            <div class="floating-badge floating-badge-1">
-              <div class="floating-badge-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
-              <div class="floating-badge-text">
-                <strong data-i18n="badge.exp">Créatif & Médias Digitaux</strong>
-                <span data-i18n="badge.exp_sub">Suite Adobe & Production</span>
-              </div>
-            </div>
+        <!-- Centered Intro Paragraph -->
+        <p class="hero-intro-bio" data-i18n="hero.bio">
+          Je suis <strong>Malakiadas Purushothaman</strong> — étudiant en Master en Commerce International à l’ESCE Paris, diplômé en Médias Digitaux (Londres) et Animation (Inde), concevant des identités de marque percutantes, du motion design et des stratégies d'expansion mondiale.
+        </p>
 
-            <div class="floating-badge floating-badge-2">
-              <div class="floating-badge-icon" style="background: rgba(59, 130, 246, 0.2); color: var(--accent-secondary);">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-              </div>
-              <div class="floating-badge-text">
-                <strong data-i18n="badge.master">Master ESCE Paris</strong>
-                <span data-i18n="badge.master_sub">Commerce International</span>
-              </div>
-            </div>
+        <!-- Action Pills -->
+        <div class="hero-action-pills">
+          <a href="#portfolio" class="pill-btn pill-btn-primary" data-i18n="hero.cta_projects">
+            Découvrir mes projets
+          </a>
+          <a href="#contact" class="pill-btn pill-btn-outline" data-i18n="hero.cta_contact">
+            Me contacter
+          </a>
+          <button class="pill-btn pill-btn-outline" id="hero-resume-btn" data-i18n="hero.cta_resume">
+            Voir le CV
+          </button>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 01: ABOUT & VISION
+           ========================================================================== -->
+      <section class="editorial-section" id="about">
+        <div class="content-container">
+          <div class="editorial-sec-header">
+            <span class="sec-number">01 /</span>
+            <h2 class="sec-title" data-i18n="sec.about_title">Profil & Vision</h2>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ==========================================================================
-         STATS SECTION
-         ========================================================================== -->
-    <section class="stats-section">
-      <div class="container stats-grid">
-        <div class="stat-card">
-          <div class="stat-number">3</div>
-          <div class="stat-label" data-i18n="stat.countries">Pays d'études & travail (FR, UK, IN)</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">5+</div>
-          <div class="stat-label" data-i18n="stat.experience">Années de formation & projets</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">3</div>
-          <div class="stat-label" data-i18n="stat.languages">Langues parlées (EN, FR, TA)</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">100%</div>
-          <div class="stat-label" data-i18n="stat.satisfaction">Rigueur & Créativité</div>
-        </div>
-      </div>
-    </section>
+          <div class="about-grid-editorial">
+            <!-- Left Bio Card -->
+            <div class="about-bio-card">
+              <p data-i18n="about.p1">
+                Actuellement en <strong>Master en Commerce International à l’ESCE Business School – Paris</strong>, je combine une solide maîtrise des outils de création digitale avec une vision stratégique du commerce international.
+              </p>
+              <p data-i18n="about.p2">
+                Mon parcours académique et professionnel s'étend de <strong>Bangalore</strong> (Bachelor Médias Digitaux & Animation) à <strong>Londres</strong> (Master Médias Digitaux) puis à <strong>Paris</strong>. Cette triple culture m'apporte une agilité hors pair, un sens affûté du storytelling et une capacité immédiate d'intégration.
+              </p>
 
-    <!-- ==========================================================================
-         ABOUT ME SECTION
-         ========================================================================== -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="about.tag">Profil Professionnel</span>
-          <h2 class="section-title" data-i18n="about.title">Convergence entre Stratégie Commerciale, Médias Digitaux et Créativité</h2>
-          <p class="section-desc">Un profil trilingue polyvalent, autonome et rigoureux, alliant expertise visuelle et rigueur commerciale.</p>
-        </div>
-
-        <div class="about-grid">
-          <!-- Text Narrative Card -->
-          <div class="about-text-card">
-            <p data-i18n="about.p1">
-              Actuellement en <strong>Master en Commerce International à l’ESCE Business School – Paris</strong>, je recherche une opportunité professionnelle stimulante à <strong>temps partiel</strong> en parallèle de mon cursus universitaire.
-            </p>
-            <p data-i18n="about.p2">
-              Mon parcours international m'a conduit de <strong>Bangalore</strong> (Bachelor en Médias Digitaux & Animation) à <strong>Londres</strong> (Master en Médias Digitaux) puis à <strong>Paris</strong>. Cette trajectoire unique combine une expertise pointue en <strong>production graphique et audiovisuelle</strong> avec une compréhension stratégique des <strong>échanges commerciaux internationaux</strong>.
-            </p>
-            <p>
-              Autonome, rigoureux et réactif, je m’intègre avec aisance à des équipes pluridisciplinaires et conçois des solutions visuelles et stratégiques innovantes.
-            </p>
-
-            <div class="about-highlights">
-              <div class="highlight-box">
-                <div class="highlight-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 14 14"></polyline>
-                  </svg>
+              <!-- Stat Boxes -->
+              <div class="stat-pills-row">
+                <div class="stat-box">
+                  <div class="stat-box-num">3</div>
+                  <div class="stat-box-lbl" data-i18n="about.stat_countries">Pays d'études & travail</div>
                 </div>
+                <div class="stat-box">
+                  <div class="stat-box-num">5+</div>
+                  <div class="stat-box-lbl" data-i18n="about.stat_experience">Années de création & études</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-box-num">3</div>
+                  <div class="stat-box-lbl" data-i18n="about.stat_languages">Langues parlées</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-box-num">100%</div>
+                  <div class="stat-box-lbl" data-i18n="about.stat_satisfaction">Rigueur & Excellence</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Pillars Stack -->
+            <div class="pillars-stack">
+              <div class="pillar-item">
+                <h3 data-i18n="pillar.p1_title">
+                  <span>✦</span> Direction Artistique & Création Digitale
+                </h3>
+                <p data-i18n="pillar.p1_desc">
+                  Maîtrise complète de la Suite Adobe (Photoshop, Premiere Pro, Illustrator, Lightroom) pour concevoir des identités de marque et des campagnes multimédias percutantes.
+                </p>
+              </div>
+
+              <div class="pillar-item">
+                <h3 data-i18n="pillar.p2_title">
+                  <span>✦</span> Stratégie Commerciale Mondiale
+                </h3>
+                <p data-i18n="pillar.p2_desc">
+                  Analyse de marché, études PESTEL, logistique transfrontalière et négociations interculturelles acquises à l'ESCE Business School.
+                </p>
+              </div>
+
+              <div class="pillar-item">
+                <h3 data-i18n="pillar.p3_title">
+                  <span>✦</span> Agilité Multiculturelle & Leadership
+                </h3>
+                <p data-i18n="pillar.p3_desc">
+                  Polyglotte (anglais courant, français intermédiaire, tamoul langue maternelle), autonome et proactif face aux défis complexes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 02: KEY EXPERIENCES (CREATIVE & STRATEGIC ONLY)
+           ========================================================================== -->
+      <section class="editorial-section" id="experience">
+        <div class="content-container">
+          <div class="editorial-sec-header">
+            <span class="sec-number">02 /</span>
+            <h2 class="sec-title" data-i18n="sec.exp_title">Expériences Clés</h2>
+          </div>
+
+          <div class="experience-list-editorial">
+            <!-- Item 1: Digital Media Freelance -->
+            <div class="exp-editorial-row">
+              <div class="exp-row-top">
                 <div>
-                  <h4 data-i18n="about.h1_title">Gestion du Stress</h4>
-                  <p data-i18n="about.h1_desc">Sang-froid éprouvé lors des livraisons de projets à forte cadence.</p>
+                  <h3 class="exp-role-title" data-i18n="exp.med_role">Spécialiste Médias Digitaux & Vidéo</h3>
+                  <div class="exp-company-sub" data-i18n="exp.med_company">Projets Multimédia & Freelance</div>
                 </div>
+                <span class="exp-dates-badge" data-i18n="exp.med_date">2023 – Présent</span>
               </div>
-              <div class="highlight-box">
-                <div class="highlight-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                  </svg>
-                </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp.med_d1">Production, montage et étalonnage vidéo sous Adobe Premiere Pro et Lightroom.</li>
+                <li data-i18n="exp.med_d2">Direction artistique et conception d'habillages visuels pour campagnes omnicanales.</li>
+                <li data-i18n="exp.med_d3">Storytelling créatif maximisant la rétention et l'engagement sur les plateformes digitales.</li>
+                <li data-i18n="exp.med_d4">Gestion autonome des projets, de l'idéation graphique à la livraison des rendus finaux.</li>
+              </ul>
+              <div class="exp-tag-strip">
+                <span class="exp-pill-tag">Adobe Premiere Pro</span>
+                <span class="exp-pill-tag">Lightroom</span>
+                <span class="exp-pill-tag">Direction Artistique</span>
+                <span class="exp-pill-tag">Motion Design</span>
+              </div>
+            </div>
+
+            <!-- Item 2: Graphic Designer Netsteds Interior -->
+            <div class="exp-editorial-row">
+              <div class="exp-row-top">
                 <div>
-                  <h4 data-i18n="about.h2_title">Esprit d'Initiative</h4>
-                  <p data-i18n="about.h2_desc">Proactif dans la conception de solutions visuelles innovantes.</p>
+                  <h3 class="exp-role-title" data-i18n="exp.des_role">Graphiste & Designer Visuel</h3>
+                  <div class="exp-company-sub" data-i18n="exp.des_company">Netsteds Interior</div>
                 </div>
+                <span class="exp-dates-badge" data-i18n="exp.des_date">2020 – 2021</span>
+              </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp.des_d1">Création d'identités visuelles, brochures et catalogues de design d'intérieur.</li>
+                <li data-i18n="exp.des_d2">Collaboration étroite avec les équipes marketing pour la production de contenus publicitaires.</li>
+                <li data-i18n="exp.des_d3">Utilisation avancée des logiciels Adobe (Photoshop, Illustrator) pour la composition graphique.</li>
+              </ul>
+              <div class="exp-tag-strip">
+                <span class="exp-pill-tag">Adobe Photoshop</span>
+                <span class="exp-pill-tag">Adobe Illustrator</span>
+                <span class="exp-pill-tag">Design Éditorial</span>
+                <span class="exp-pill-tag">Identité Visuelle</span>
+              </div>
+            </div>
+
+            <!-- Item 3: ESCE Paris Academic Strategy Projects -->
+            <div class="exp-editorial-row">
+              <div class="exp-row-top">
+                <div>
+                  <h3 class="exp-role-title" data-i18n="exp.esce_role">Consultant Junior en Stratégie Internationale</h3>
+                  <div class="exp-company-sub" data-i18n="exp.esce_company">ESCE Business School • Projets Académiques</div>
+                </div>
+                <span class="exp-dates-badge" data-i18n="exp.esce_date">2025 – 2026</span>
+              </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp.esce_d1">Études de marché et stratégie d'implantation transfrontalière pour marques innovantes.</li>
+                <li data-i18n="exp.esce_d2">Analyses PESTEL, benchmarking concurrentiel et segmentation d'audience.</li>
+                <li data-i18n="exp.esce_d3">Modélisation de prévisions financières et plans de rentabilité sous Microsoft Excel.</li>
+                <li data-i18n="exp.esce_d4">Présentation de recommandations stratégiques en contextes bilingues anglais et français.</li>
+              </ul>
+              <div class="exp-tag-strip">
+                <span class="exp-pill-tag">Commerce International</span>
+                <span class="exp-pill-tag">Excel Modélisation</span>
+                <span class="exp-pill-tag">Stratégie d'Expansion</span>
+              </div>
+            </div>
+
+            <!-- Item 4: 2D Animation & Motion Projects -->
+            <div class="exp-editorial-row">
+              <div class="exp-row-top">
+                <div>
+                  <h3 class="exp-role-title" data-i18n="exp.anim_role">Concepteur Motion Graphics & Animation 2D</h3>
+                  <div class="exp-company-sub" data-i18n="exp.anim_company">St. Joseph's College • Projets de Création</div>
+                </div>
+                <span class="exp-dates-badge" data-i18n="exp.anim_date">2019 – 2021</span>
+              </div>
+              <ul class="exp-bullets">
+                <li data-i18n="exp.anim_d1">Conception de storyboards, création de décors vectoriels et animation image par image.</li>
+                <li data-i18n="exp.anim_d2">Production d'animations numériques sous la Suite Adobe.</li>
+                <li data-i18n="exp.anim_d3">Participation à des projets créatifs étudiants récompensés pour leur qualité visuelle.</li>
+              </ul>
+              <div class="exp-tag-strip">
+                <span class="exp-pill-tag">Animation 2D</span>
+                <span class="exp-pill-tag">Storyboard</span>
+                <span class="exp-pill-tag">Art Vectoriel</span>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- Value Pillars -->
-          <div class="about-cards">
-            <div class="value-card">
-              <div class="value-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
+      <!-- ==========================================================================
+           SECTION 03: HIGHER EDUCATION
+           ========================================================================== -->
+      <section class="editorial-section" id="education">
+        <div class="content-container">
+          <div class="editorial-sec-header">
+            <span class="sec-number">03 /</span>
+            <h2 class="sec-title" data-i18n="sec.edu_title">Formation Académique</h2>
+          </div>
+
+          <div class="education-grid-editorial">
+            <!-- Degree 1: ESCE Paris -->
+            <div class="edu-editorial-card">
               <div>
-                <h3 data-i18n="value.val1_title">Création Digitale & Direction Artistique</h3>
-                <p data-i18n="value.val1_desc">Maîtrise approfondie de la Suite Adobe (Photoshop, Premiere Pro, Illustrator, Lightroom) pour concevoir des supports visuels et vidéos percutants.</p>
+                <span class="edu-year-tag">2025 – 2026</span>
+                <h3 class="edu-degree-title" data-i18n="edu.esce_deg">Master en Commerce International</h3>
+                <div class="edu-school-name" data-i18n="edu.esce_sch">ESCE Business School • Paris</div>
+              </div>
+              <p class="edu-summary-desc" data-i18n="edu.esce_desc">
+                Commerce international, supply chain, négociation interculturelle et marketing global.
+              </p>
+            </div>
+
+            <!-- Degree 2: London Metropolitan -->
+            <div class="edu-editorial-card">
+              <div>
+                <span class="edu-year-tag">2023 – 2025</span>
+                <h3 class="edu-degree-title" data-i18n="edu.lmu_deg">Master en Médias Digitaux</h3>
+                <div class="edu-school-name" data-i18n="edu.lmu_sch">London Metropolitan University • Londres</div>
+              </div>
+              <p class="edu-summary-desc" data-i18n="edu.lmu_desc">
+                Stratégie de contenu numérique, production vidéo avancée et communication de marque.
+              </p>
+            </div>
+
+            <!-- Degree 3: St. Joseph's College -->
+            <div class="edu-editorial-card">
+              <div>
+                <span class="edu-year-tag">2018 – 2021</span>
+                <h3 class="edu-degree-title" data-i18n="edu.sjc_deg">Bachelor Médias Digitaux & Animation</h3>
+                <div class="edu-school-name" data-i18n="edu.sjc_sch">St. Joseph's College • Bangalore</div>
+              </div>
+              <p class="edu-summary-desc" data-i18n="edu.sjc_desc">
+                Composition visuelle, animation 2D/3D, théorie des couleurs et montage audiovisuel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 04: SKILLS & TOOLKIT
+           ========================================================================== -->
+      <section class="editorial-section" id="skills">
+        <div class="content-container">
+          <div class="editorial-sec-header">
+            <span class="sec-number">04 /</span>
+            <h2 class="sec-title" data-i18n="sec.skills_title">Expertise & Outils</h2>
+          </div>
+
+          <div class="skills-grid-editorial">
+            <!-- Column 1: Creative Suite -->
+            <div class="skill-col-card">
+              <h3 class="skill-col-title">CRÉATIF & SUITE ADOBE</h3>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Adobe Photoshop</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Adobe Premiere Pro</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Adobe Lightroom</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Adobe Illustrator</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 82%;"></div>
+                </div>
               </div>
             </div>
 
-            <div class="value-card">
-              <div class="value-icon" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.15)); color: var(--accent-secondary);">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <!-- Column 2: Business & Strategy -->
+            <div class="skill-col-card">
+              <h3 class="skill-col-title">COMMERCE & STRATÉGIE</h3>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Stratégie Commerciale Mondiale</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Gestion de Projet & Deadlines</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Études de Marché & PESTEL</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-row">
+                <div class="skill-bar-info">
+                  <span>Microsoft Excel & Modélisation</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3: Languages & Certifications -->
+            <div class="skill-col-card">
+              <h3 class="skill-col-title">LANGUES & CERTIFICATIONS</h3>
+
+              <div style="margin-bottom: 1.5rem;">
+                <p style="font-size: 0.95rem; color: #ffffff; margin-bottom: 0.5rem;">
+                  <strong>Anglais :</strong> Courant (C1/C2)
+                </p>
+                <p style="font-size: 0.95rem; color: #ffffff; margin-bottom: 0.5rem;">
+                  <strong>Français :</strong> Intermédiaire (DELF A1)
+                </p>
+                <p style="font-size: 0.95rem; color: #ffffff;">
+                  <strong>Tamoul :</strong> Langue maternelle
+                </p>
+              </div>
+
+              <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1rem;">
+                <p style="font-size: 0.88rem; color: var(--accent-primary); font-weight: 700; margin-bottom: 0.4rem;">
+                  ✦ DELF A1 — Ministère Éducation Nationale
+                </p>
+                <p style="font-size: 0.88rem; color: var(--accent-primary); font-weight: 700;">
+                  ✦ Fitness Trainer Certification — ISCC
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 05: FEATURED PROJECTS
+           ========================================================================== -->
+      <section class="editorial-section" id="portfolio">
+        <div class="content-container">
+          <div class="editorial-sec-header">
+            <span class="sec-number">05 /</span>
+            <h2 class="sec-title" data-i18n="sec.port_title">Portfolio & Réalisations</h2>
+          </div>
+
+          <!-- Project Filter Pills -->
+          <div class="project-filters-wrap">
+            <button class="proj-filter-btn active" data-filter="all" data-i18n="port.filter_all">Tous les projets</button>
+            <button class="proj-filter-btn" data-filter="creative" data-i18n="port.filter_creative">Graphisme & Branding</button>
+            <button class="proj-filter-btn" data-filter="media" data-i18n="port.filter_media">Médias & Motion</button>
+            <button class="proj-filter-btn" data-filter="strategy" data-i18n="port.filter_strategy">Stratégie & Commerce</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-editorial-grid">
+            <!-- Project 1 -->
+            <div class="proj-card-editorial" data-category="creative" data-id="1">
+              <div class="proj-thumb-box">
+                <span class="proj-thumb-tag">Branding</span>
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+              </div>
+              <div class="proj-body-box">
+                <div>
+                  <h3>Branding & Visuels d'Intérieur</h3>
+                  <p class="proj-desc-text">
+                    Création de l'identité visuelle, de catalogues d'architecture intérieure et de campagnes promotionnelles pour Netsteds Interior.
+                  </p>
+                </div>
+                <div class="proj-foot-row">
+                  <span class="exp-pill-tag">Photoshop</span>
+                  <span class="proj-link-text">Voir le projet ▹</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="proj-card-editorial" data-category="media" data-id="2">
+              <div class="proj-thumb-box" style="background: #141724;">
+                <span class="proj-thumb-tag">Motion Design</span>
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="proj-body-box">
+                <div>
+                  <h3>Direction Artistique & Motion Design</h3>
+                  <p class="proj-desc-text">
+                    Conception de vidéos narratives dynamiques, génériques animés et habillage visuel sur mesure pour campagnes promotionnelles.
+                  </p>
+                </div>
+                <div class="proj-foot-row">
+                  <span class="exp-pill-tag">Premiere Pro</span>
+                  <span class="proj-link-text">Voir le projet ▹</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="proj-card-editorial" data-category="media" data-id="3">
+              <div class="proj-thumb-box" style="background: #181d2c;">
+                <span class="proj-thumb-tag">Vidéo</span>
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <div class="proj-body-box">
+                <div>
+                  <h3>Production & Storytelling Vidéo</h3>
+                  <p class="proj-desc-text">
+                    Réalisation de courts-métrages promotionnels et montage cinématographique avec étalonnage couleur sous Adobe Premiere & Lightroom.
+                  </p>
+                </div>
+                <div class="proj-foot-row">
+                  <span class="exp-pill-tag">Lightroom</span>
+                  <span class="proj-link-text">Voir le projet ▹</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="proj-card-editorial" data-category="strategy" data-id="4">
+              <div class="proj-thumb-box" style="background: #1e1f2b;">
+                <span class="proj-thumb-tag">Commerce</span>
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M2 12h20"></path>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                 </svg>
               </div>
-              <div>
-                <h3 data-i18n="value.val2_title">Stratégie Internationale & Marchés</h3>
-                <p data-i18n="value.val2_desc">Analyse d'expansion mondiale, marketing digital transfrontalier et négociation interculturelle développés à l'ESCE Paris.</p>
-              </div>
-            </div>
-
-            <div class="value-card">
-              <div class="value-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 data-i18n="value.val3_title">Agilité Multiculturelle</h3>
-                <p data-i18n="value.val3_desc">Capacité d'intégration immédiate dans des environnements internationaux, bilingue anglais avec pratique du français et du tamoul.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         EXPERIENCE SECTION (CREATIVE, DIGITAL & STRATEGIC ONLY)
-         ========================================================================== -->
-    <section class="section" id="experience" style="background: rgba(13, 18, 28, 0.35);">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="exp.tag">Parcours Professionnel</span>
-          <h2 class="section-title" data-i18n="exp.title">Expériences Créatives, Digitales & Stratégiques</h2>
-          <p class="section-desc" data-i18n="exp.desc">Un parcours axé sur la création graphique, la réalisation multimédia et le développement commercial international.</p>
-        </div>
-
-        <div class="experience-timeline">
-          <!-- Item 1: Digital Media Freelance / Projects -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
+              <div class="proj-body-box">
                 <div>
-                  <h3 class="timeline-role" data-i18n="exp.med_role">Spécialiste Médias Digitaux & Vidéo</h3>
-                  <div class="timeline-company" data-i18n="exp.med_company">
-                    Projets Multimédia & Freelance
-                  </div>
+                  <h3>Stratégie d'Expansion Européenne</h3>
+                  <p class="proj-desc-text">
+                    Étude de pénétration transfrontalière, chaîne logistique d'approvisionnement et négociation commerciale interculturelle.
+                  </p>
                 </div>
-                <span class="timeline-badge" data-i18n="exp.med_date">2023 – Présent</span>
-              </div>
-              <div class="timeline-location">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span data-i18n="exp.med_loc">Londres & Paris</span>
-              </div>
-              <ul class="timeline-responsibilities">
-                <li data-i18n="exp.med_d1">Production, montage et étalonnage de vidéos dynamiques sous Adobe Premiere Pro et Lightroom.</li>
-                <li data-i18n="exp.med_d2">Direction artistique et conception d'éléments graphiques pour des campagnes digitales omnicanales.</li>
-                <li data-i18n="exp.med_d3">Élaboration de narrations visuelles captivantes maximisant l'engagement sur les réseaux sociaux.</li>
-                <li data-i18n="exp.med_d4">Gestion complète des projets créatifs, du brief client au rendu final haute définition.</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="timeline-tag">Adobe Premiere Pro</span>
-                <span class="timeline-tag">Lightroom</span>
-                <span class="timeline-tag">Storytelling Visuel</span>
-                <span class="timeline-tag">Montage & Étalonnage</span>
-                <span class="timeline-tag">Motion Design</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 2: Graphic Designer Netsteds Interior -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role" data-i18n="exp.des_role">Graphiste & Designer Visuel</h3>
-                  <div class="timeline-company" data-i18n="exp.des_company">Netsteds Interior</div>
+                <div class="proj-foot-row">
+                  <span class="exp-pill-tag">Excel Financial</span>
+                  <span class="proj-link-text">Voir le projet ▹</span>
                 </div>
-                <span class="timeline-badge" data-i18n="exp.des_date">2020 – 2021</span>
-              </div>
-              <div class="timeline-location">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span data-i18n="exp.des_loc">Bangalore, Inde</span>
-              </div>
-              <ul class="timeline-responsibilities">
-                <li data-i18n="exp.des_d1">Création de supports visuels pour la communication de marque et le design d’intérieur.</li>
-                <li data-i18n="exp.des_d2">Collaboration étroite avec l’équipe marketing pour la production de catalogues et posts sociaux.</li>
-                <li data-i18n="exp.des_d3">Utilisation avancée des logiciels Adobe (Photoshop, Illustrator) pour les rendus graphiques.</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="timeline-tag">Adobe Photoshop</span>
-                <span class="timeline-tag">Adobe Illustrator</span>
-                <span class="timeline-tag">Design Graphique</span>
-                <span class="timeline-tag">Identité Visuelle</span>
               </div>
             </div>
-          </div>
 
-          <!-- Item 3: ESCE Paris Academic Strategy Projects -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role" data-i18n="exp.esce_proj_role">Consultant Junior en Stratégie Internationale</h3>
-                  <div class="timeline-company" data-i18n="exp.esce_proj_company">ESCE Business School • Projets Académiques</div>
-                </div>
-                <span class="timeline-badge" data-i18n="exp.esce_proj_date">2025 – 2026</span>
-              </div>
-              <div class="timeline-location">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span data-i18n="exp.esce_proj_loc">Paris, France</span>
-              </div>
-              <ul class="timeline-responsibilities">
-                <li data-i18n="exp.esce_proj_d1">Études de marché et stratégies d'expansion transfrontalières pour des marques innovantes.</li>
-                <li data-i18n="exp.esce_proj_d2">Analyses PESTEL, études concurrentielles et identification des opportunités commerciales.</li>
-                <li data-i18n="exp.esce_proj_d3">Modélisation de prévisions de vente et plans de rentabilité sous Microsoft Excel.</li>
-                <li data-i18n="exp.esce_proj_d4">Présentations de recommandations stratégiques en contextes bilingues anglais et français.</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="timeline-tag">Commerce International</span>
-                <span class="timeline-tag">Étude de Marché</span>
-                <span class="timeline-tag">Excel Financier</span>
-                <span class="timeline-tag">Communication Stratégique</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 4: 2D Animation & Motion Projects -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role" data-i18n="exp.anim_role">Concepteur Motion Graphics & Animation 2D</h3>
-                  <div class="timeline-company" data-i18n="exp.anim_company">St. Joseph's College • Projets de Création</div>
-                </div>
-                <span class="timeline-badge" data-i18n="exp.anim_date">2019 – 2021</span>
-              </div>
-              <div class="timeline-location">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span data-i18n="exp.anim_loc">Bangalore, Inde</span>
-              </div>
-              <ul class="timeline-responsibilities">
-                <li data-i18n="exp.anim_d1">Réalisation de storyboards et conception de décors et personnages vectoriels.</li>
-                <li data-i18n="exp.anim_d2">Animation 2D image par image et composition graphique sous la Suite Adobe.</li>
-                <li data-i18n="exp.anim_d3">Participation à des projets créatifs d'animation récompensés pour leur originalité visuelle.</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="timeline-tag">Animation 2D</span>
-                <span class="timeline-tag">Storyboard</span>
-                <span class="timeline-tag">Illustration Vectorielle</span>
-                <span class="timeline-tag">Arts Numériques</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         EDUCATION SECTION
-         ========================================================================== -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="edu.tag">Cursus Universitaire</span>
-          <h2 class="section-title" data-i18n="edu.title">Formation Académique Internationale</h2>
-          <p class="section-desc" data-i18n="edu.desc">Un parcours d'excellence traversant trois capitales mondiales de l'innovation et du business.</p>
-        </div>
-
-        <div class="education-grid">
-          <!-- Degree 1: ESCE Paris -->
-          <div class="edu-card">
-            <div>
-              <div class="edu-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-              </div>
-              <span class="edu-years">2025 – 2026 (En cours)</span>
-              <h3 class="edu-degree" data-i18n="edu.esce_deg">Master en Commerce International</h3>
-              <div class="edu-school" data-i18n="edu.esce_sch">ESCE Business School</div>
-              <div class="edu-location" data-i18n="edu.esce_loc">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span>Paris, France</span>
-              </div>
-            </div>
-            <p class="edu-desc" data-i18n="edu.esce_desc">
-              Approfondissement des stratégies de commerce mondial, négociation internationale, supply chain et gestion commerciale interculturelle.
-            </p>
-          </div>
-
-          <!-- Degree 2: London Metropolitan -->
-          <div class="edu-card">
-            <div>
-              <div class="edu-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-              <span class="edu-years">2023 – 2025</span>
-              <h3 class="edu-degree" data-i18n="edu.lmu_deg">Master en Médias Digitaux</h3>
-              <div class="edu-school" data-i18n="edu.lmu_sch">London Metropolitan University</div>
-              <div class="edu-location" data-i18n="edu.lmu_loc">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span>Londres, Royaume-Uni</span>
-              </div>
-            </div>
-            <p class="edu-desc" data-i18n="edu.lmu_desc">
-              Stratégie de contenu numérique, production vidéo avancée, storytelling multimédia et communication de marque digitale.
-            </p>
-          </div>
-
-          <!-- Degree 3: St. Joseph's Bangalore -->
-          <div class="edu-card">
-            <div>
-              <div class="edu-icon-wrap">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                </svg>
-              </div>
-              <span class="edu-years">2018 – 2021</span>
-              <h3 class="edu-degree" data-i18n="edu.sjc_deg">Bachelor en Médias Digitaux & Animation</h3>
-              <div class="edu-school" data-i18n="edu.sjc_sch">St. Joseph's College</div>
-              <div class="edu-location" data-i18n="edu.sjc_loc">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                <span>Bangalore, Inde</span>
-              </div>
-            </div>
-            <p class="edu-desc" data-i18n="edu.sjc_desc">
-              Fondamentaux de la composition graphique, modélisation 2D/3D, animation, théorie des couleurs et montage audiovisuel.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SKILLS & COMPETENCIES SECTION
-         ========================================================================== -->
-    <section class="section" id="skills" style="background: rgba(13, 18, 28, 0.35);">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="skills.tag">Expertise & Outils</span>
-          <h2 class="section-title" data-i18n="skills.title">Compétences & Savoir-Faire</h2>
-          <p class="section-desc" data-i18n="skills.desc">Une combinaison rare de créativité numérique, de vision commerciale et de qualités relationnelles.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Col 1: Creative & Digital Tools -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <!-- Project 5 -->
+            <div class="proj-card-editorial" data-category="creative" data-id="5">
+              <div class="proj-thumb-box" style="background: #121622;">
+                <span class="proj-thumb-tag">Branding</span>
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
                   <line x1="9" y1="9" x2="9.01" y2="9"></line>
                   <line x1="15" y1="9" x2="15.01" y2="9"></line>
                 </svg>
               </div>
-              <h3 data-i18n="skills.cat_creative">Outils Créatifs & Digitaux</h3>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Adobe Photoshop</span>
-                <span>92%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Adobe Premiere Pro</span>
-                <span>88%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
+              <div class="proj-body-box">
+                <div>
+                  <h3>Identité Visuelle & Stratégie Digitale</h3>
+                  <p class="proj-desc-text">
+                    Élaboration de chartes graphiques complètes pour marques digitales : logos, palettes chromatiques et typographies.
+                  </p>
+                </div>
+                <div class="proj-foot-row">
+                  <span class="exp-pill-tag">Illustrator</span>
+                  <span class="proj-link-text">Voir le projet ▹</span>
+                </div>
               </div>
             </div>
 
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Adobe Lightroom</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Adobe Illustrator</span>
-                <span>82%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 82%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Animation 2D & Motion Design</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Col 2: Business & Strategy -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon" style="background: rgba(59, 130, 246, 0.15); color: var(--accent-secondary);">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            <!-- Project 6 -->
+            <div class="proj-card-editorial" data-category="creative" data-id="6">
+              <div class="proj-thumb-box" style="background: #171826;">
+                <span class="proj-thumb-tag">Animation</span>
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                 </svg>
               </div>
-              <h3 data-i18n="skills.cat_mgmt">Commerce & Stratégie</h3>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Stratégie Commerciale Internationale</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Gestion de Projet & Deadlines</span>
-                <span>92%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Études de Marché & PESTEL</span>
-                <span>88%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Microsoft Excel & Modélisation</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Communication Bilingue & Pitch</span>
-                <span>94%</span>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 94%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Col 3: Languages & Certifications -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <div class="category-icon" style="background: rgba(239, 68, 68, 0.15); color: var(--accent-primary);">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                </svg>
-              </div>
-              <h3 data-i18n="skills.cat_langs">Langues & Savoir-Être</h3>
-            </div>
-
-            <!-- Languages -->
-            <div style="margin-bottom: 1.2rem;">
-              <h4 style="font-size: 0.88rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.6rem; letter-spacing: 0.05em;">
-                Langues
-              </h4>
-              <div class="skill-tags-cloud">
-                <div class="skill-tag-pill">
-                  <strong>Anglais</strong>
-                  <span class="lang-level-badge">Courant (C1/C2)</span>
+              <div class="proj-body-box">
+                <div>
+                  <h3>Animation Numérique & Concept Art</h3>
+                  <p class="proj-desc-text">
+                    Création de storyboards, conception de personnages vectoriels et animation 2D image par image.
+                  </p>
                 </div>
-                <div class="skill-tag-pill">
-                  <strong>Français</strong>
-                  <span class="lang-level-badge">Intermédiaire (DELF A1)</span>
-                </div>
-                <div class="skill-tag-pill">
-                  <strong>Tamoul</strong>
-                  <span class="lang-level-badge">Maternelle</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Soft skills -->
-            <div style="margin-bottom: 1.2rem;">
-              <h4 style="font-size: 0.88rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.6rem; letter-spacing: 0.05em;">
-                Savoir-Être
-              </h4>
-              <div class="skill-tags-cloud">
-                <span class="skill-tag-pill">Patience & Gestion du stress</span>
-                <span class="skill-tag-pill">Proactivité & Prise d'initiative</span>
-                <span class="skill-tag-pill">Forte adaptabilité au changement</span>
-                <span class="skill-tag-pill">Leadership naturel & Esprit d'équipe</span>
-              </div>
-            </div>
-
-            <!-- Certifications -->
-            <div>
-              <h4 style="font-size: 0.88rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.6rem; letter-spacing: 0.05em;" data-i18n="skills.cert_title">
-                Certifications Officielles
-              </h4>
-              <div class="cert-card">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <div class="cert-info">
-                  <h4 data-i18n="skills.cert_delf">DELF A1 – Langue Française</h4>
-                  <p>Diplôme officiel du Ministère de l'Éducation Nationale</p>
-                </div>
-              </div>
-              <div class="cert-card" style="margin-top: 0.6rem;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <div class="cert-info">
-                  <h4 data-i18n="skills.cert_fitness">Fitness Trainer Certification – ISCC</h4>
-                  <p>International Sports & Coaching Certification</p>
+                <div class="proj-foot-row">
+                  <span class="exp-pill-tag">Animation 2D</span>
+                  <span class="proj-link-text">Voir le projet ▹</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
-         PORTFOLIO & PROJECTS SHOWCASE
-         ========================================================================== -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="port.tag">Réalisations</span>
-          <h2 class="section-title" data-i18n="port.title">Portfolio & Études de Cas</h2>
-          <p class="section-desc" data-i18n="port.desc">Sélection de réalisations illustrant mes compétences en médias digitaux, design graphique et stratégie commerciale.</p>
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="portfolio-filters">
-          <button class="filter-btn active" data-filter="all" data-i18n="port.filter_all">Tous les projets</button>
-          <button class="filter-btn" data-filter="creative" data-i18n="port.filter_creative">Création & Graphisme</button>
-          <button class="filter-btn" data-filter="management" data-i18n="port.filter_mgmt">Médias & Motion</button>
-          <button class="filter-btn" data-filter="business" data-i18n="port.filter_business">Commerce & Stratégie</button>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Card 1: Netsteds Interior -->
-          <div class="project-card" data-category="creative" data-id="1">
-            <div class="project-thumbnail">
-              <span class="project-badge-top">Design & Branding</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Branding & Visuels d'Intérieur</h3>
-                <p class="project-desc">
-                  Création de l'identité visuelle, de catalogues d'architecture intérieure et de supports de communication digitale pour Netsteds Interior.
-                </p>
-              </div>
-              <div class="project-footer">
-                <div class="project-tech">
-                  <span class="tech-tag">Photoshop</span>
-                  <span class="tech-tag">Illustrator</span>
-                </div>
-                <span class="project-view-btn">Détails ▹</span>
-              </div>
-            </div>
+      <!-- ==========================================================================
+           SECTION 06: CONTACT SECTION
+           ========================================================================== -->
+      <section class="editorial-section" id="contact">
+        <div class="content-container">
+          <div class="editorial-sec-header">
+            <span class="sec-number">06 /</span>
+            <h2 class="sec-title" data-i18n="sec.contact_title">Entrons en Contact</h2>
           </div>
 
-          <!-- Card 2: Motion Design Campaign -->
-          <div class="project-card" data-category="management" data-id="2">
-            <div class="project-thumbnail" style="background: linear-gradient(135deg, #2b1318, #0e121d);">
-              <span class="project-badge-top">Motion & Direction</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Direction Artistique & Motion Design</h3>
-                <p class="project-desc">
-                  Conception de vidéos narratives dynamiques, génériques animés et habillage visuel sur mesure pour campagnes promotionnelles.
-                </p>
-              </div>
-              <div class="project-footer">
-                <div class="project-tech">
-                  <span class="tech-tag">Premiere Pro</span>
-                  <span class="tech-tag">After Effects</span>
-                </div>
-                <span class="project-view-btn">Détails ▹</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: London Met Multimedia -->
-          <div class="project-card" data-category="management" data-id="3">
-            <div class="project-thumbnail" style="background: linear-gradient(135deg, #101c30, #090e18);">
-              <span class="project-badge-top">Vidéo & Montage</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
-              </svg>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Production & Storytelling Vidéo</h3>
-                <p class="project-desc">
-                  Réalisation de courts-métrages promotionnels et montage cinématographique avec étalonnage chromatique sous Adobe Premiere & Lightroom.
-                </p>
-              </div>
-              <div class="project-footer">
-                <div class="project-tech">
-                  <span class="tech-tag">Premiere Pro</span>
-                  <span class="tech-tag">Lightroom</span>
-                </div>
-                <span class="project-view-btn">Détails ▹</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: ESCE Paris Business Study -->
-          <div class="project-card" data-category="business" data-id="4">
-            <div class="project-thumbnail" style="background: linear-gradient(135deg, #261214, #101524);">
-              <span class="project-badge-top">International Trade</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Stratégie d'Expansion Marché Européen</h3>
-                <p class="project-desc">
-                  Étude de pénétration transfrontalière, chaîne logistique d'approvisionnement et négociation commerciale interculturelle.
-                </p>
-              </div>
-              <div class="project-footer">
-                <div class="project-tech">
-                  <span class="tech-tag">Business Plan</span>
-                  <span class="tech-tag">Supply Chain</span>
-                </div>
-                <span class="project-view-btn">Détails ▹</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5: Creative Suite Visual Identity -->
-          <div class="project-card" data-category="creative" data-id="5">
-            <div class="project-thumbnail" style="background: linear-gradient(135deg, #141b2b, #0c101c);">
-              <span class="project-badge-top">Identité Visuelle</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                <line x1="15" y1="9" x2="15.01" y2="9"></line>
-              </svg>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Identité Graphique & Direction Visuelle</h3>
-                <p class="project-desc">
-                  Élaboration de chartes graphiques de marques numériques : logos vectoriels, typographies, hiérarchies de couleurs et kits de communication.
-                </p>
-              </div>
-              <div class="project-footer">
-                <div class="project-tech">
-                  <span class="tech-tag">Illustrator</span>
-                  <span class="tech-tag">Branding</span>
-                </div>
-                <span class="project-view-btn">Détails ▹</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6: St Joseph Animation & Concept Art -->
-          <div class="project-card" data-category="creative" data-id="6">
-            <div class="project-thumbnail" style="background: linear-gradient(135deg, #24121b, #0e1220);">
-              <span class="project-badge-top">Animation 2D</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-            </div>
-            <div class="project-body">
-              <div>
-                <h3>Animation Numérique & Concept Art</h3>
-                <p class="project-desc">
-                  Création de storyboards, conception de personnages vectoriels et animation 2D image par image dans le cadre du diplôme universitaire.
-                </p>
-              </div>
-              <div class="project-footer">
-                <div class="project-tech">
-                  <span class="tech-tag">Animation</span>
-                  <span class="tech-tag">Vector Art</span>
-                </div>
-                <span class="project-view-btn">Détails ▹</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CONTACT SECTION
-         ========================================================================== -->
-    <section class="section" id="contact" style="background: rgba(13, 18, 28, 0.35);">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="contact.tag">Discutons Ensemble</span>
-          <h2 class="section-title" data-i18n="contact.title">Entrons en Contact</h2>
-          <p class="section-desc" data-i18n="contact.desc">Disponible immédiatement pour un entretien ou une proposition d'emploi à temps partiel à Paris.</p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Left Info Cards -->
-          <div class="contact-info-panel">
-            <!-- Email -->
-            <div class="contact-method-card">
-              <div class="method-left">
-                <div class="method-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div class="method-details">
+          <div class="contact-editorial-grid">
+            <!-- Left Info Cards -->
+            <div class="contact-quick-list">
+              <div class="contact-item-card">
+                <div class="contact-item-details">
                   <span>Email Direct</span>
                   <a href="mailto:purushoajith7@gmail.com">purushoajith7@gmail.com</a>
                 </div>
+                <button class="contact-copy-btn" data-copy="purushoajith7@gmail.com" data-i18n="contact.copy">Copier</button>
               </div>
-              <button class="copy-btn" data-copy="purushoajith7@gmail.com" data-i18n="contact.copy">Copier</button>
-            </div>
 
-            <!-- Phone -->
-            <div class="contact-method-card">
-              <div class="method-left">
-                <div class="method-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                </div>
-                <div class="method-details">
+              <div class="contact-item-card">
+                <div class="contact-item-details">
                   <span>Téléphone Mobile</span>
                   <a href="tel:+33743657092">07 43 65 70 92</a>
                 </div>
+                <button class="contact-copy-btn" data-copy="0743657092" data-i18n="contact.copy">Copier</button>
               </div>
-              <button class="copy-btn" data-copy="0743657092" data-i18n="contact.copy">Copier</button>
-            </div>
 
-            <!-- Location -->
-            <div class="contact-method-card">
-              <div class="method-left">
-                <div class="method-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div class="method-details">
+              <div class="contact-item-card">
+                <div class="contact-item-details">
                   <span>Localisation</span>
-                  <p>16 place du 19 mars 1962, Villiers-le-Bel 95400 (Région Parisienne)</p>
+                  <p>Paris & Villiers-le-Bel 95400, France</p>
                 </div>
+                <button class="contact-copy-btn" data-copy="Villiers-le-Bel 95400, France" data-i18n="contact.copy">Copier</button>
               </div>
-              <button class="copy-btn" data-copy="16 place du 19 mars 1962, Villiers le bel 95400" data-i18n="contact.copy">Copier</button>
+
+              <div class="about-bio-card" style="padding: 1.8rem; margin-top: 1rem;">
+                <h4 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.5rem;">Curriculum Vitae</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+                  Consultez la version complète ou téléchargez le CV au format PDF.
+                </p>
+                <button class="pill-btn pill-btn-primary" onclick="window.print()" style="width: 100%; justify-content: center;">
+                  Imprimer / Exporter en PDF
+                </button>
+              </div>
             </div>
 
-            <!-- Resume Download Quick Box -->
-            <div class="about-text-card" style="padding: 1.8rem; border-color: rgba(239, 68, 68, 0.35);">
-              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Curriculum Vitae</h4>
-              <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
-                Besoin d'une version imprimable ou PDF pour votre processus de recrutement ?
-              </p>
-              <button class="btn btn-primary" onclick="window.print()" style="width: 100%;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                  <rect x="6" y="14" width="12" height="8"></rect>
-                </svg>
-                <span>Imprimer ou Enregistrer le CV en PDF</span>
-              </button>
+            <!-- Right Message Form -->
+            <div class="contact-form-box">
+              <form id="contact-form">
+                <div class="form-field-wrap">
+                  <label for="c-name" data-i18n="contact.form_name">Votre Nom & Prénom</label>
+                  <input type="text" id="c-name" class="form-input-field" required placeholder="Jean Dupont" data-i18n-ph="contact.form_name">
+                </div>
+
+                <div class="form-field-wrap">
+                  <label for="c-email" data-i18n="contact.form_email">Adresse Email</label>
+                  <input type="email" id="c-email" class="form-input-field" required placeholder="contact@entreprise.com" data-i18n-ph="contact.form_email">
+                </div>
+
+                <div class="form-field-wrap">
+                  <label for="c-subject" data-i18n="contact.form_subject">Sujet</label>
+                  <input type="text" id="c-subject" class="form-input-field" required placeholder="Opportunité d'emploi / Projet" data-i18n-ph="contact.form_subject">
+                </div>
+
+                <div class="form-field-wrap">
+                  <label for="c-message" data-i18n="contact.form_message">Votre Message</label>
+                  <textarea id="c-message" class="form-textarea-field" rows="4" required placeholder="Bonjour Malakiadas..." data-i18n-ph="contact.form_message"></textarea>
+                </div>
+
+                <button type="submit" class="pill-btn pill-btn-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                  <span data-i18n="contact.form_btn">Envoyer le message</span>
+                </button>
+              </form>
             </div>
-          </div>
-
-          <!-- Right Interactive Contact Form -->
-          <div class="contact-form-wrapper">
-            <form class="contact-form" id="contact-form">
-              <div class="form-group">
-                <label for="contact-name" data-i18n="contact.form_name">Votre Nom & Prénom</label>
-                <input type="text" id="contact-name" class="form-input" required placeholder="Ex. Jean Dupont" data-i18n-ph="contact.form_name">
-              </div>
-
-              <div class="form-group">
-                <label for="contact-email" data-i18n="contact.form_email">Adresse Email</label>
-                <input type="email" id="contact-email" class="form-input" required placeholder="Ex. contact@entreprise.com" data-i18n-ph="contact.form_email">
-              </div>
-
-              <div class="form-group">
-                <label for="contact-subject" data-i18n="contact.form_subject">Sujet</label>
-                <input type="text" id="contact-subject" class="form-input" required placeholder="Ex. Proposition d'emploi à temps partiel / Entretien" data-i18n-ph="contact.form_subject">
-              </div>
-
-              <div class="form-group">
-                <label for="contact-message" data-i18n="contact.form_message">Votre Message</label>
-                <textarea id="contact-message" class="form-textarea" required placeholder="Bonjour Malakiadas, nous avons pris connaissance de votre profil..." data-i18n-ph="contact.form_message"></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-                <span data-i18n="contact.form_btn">Envoyer le message</span>
-              </button>
-            </form>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+
+      <!-- ==========================================================================
+           FOOTER
+           ========================================================================== -->
+      <footer class="editorial-footer">
+        <div class="content-container footer-inner-row">
+          <div class="footer-copy">
+            © 2026 <strong>Malakiadas Purushothaman</strong>. Tous droits réservés.
+          </div>
+          <div style="display: flex; gap: 1.5rem; font-size: 0.88rem;">
+            <a href="#about" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav.about">À Propos</a>
+            <a href="#experience" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav.experience">Expériences</a>
+            <a href="#education" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav.education">Formation</a>
+            <a href="#portfolio" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav.portfolio">Projets</a>
+            <a href="#contact" style="color: var(--text-secondary); text-decoration: none;" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /main-content-wrapper -->
+  </div><!-- /page-wrapper -->
 
   <!-- ==========================================================================
-       FOOTER
+       SLIDE-OUT FULLSCREEN MENU DRAWER
        ========================================================================== -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-copy">
-        © 2026 <strong>Malakiadas Purushothaman</strong>. Tous droits réservés.
-      </div>
-      <div class="footer-links">
-        <a href="#about" data-i18n="nav.about">À Propos</a>
-        <a href="#experience" data-i18n="nav.experience">Expériences</a>
-        <a href="#education" data-i18n="nav.education">Formation</a>
-        <a href="#skills" data-i18n="nav.skills">Compétences</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-      </div>
-    </div>
-  </footer>
+  <div class="drawer-menu" id="drawer-menu">
+    <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Fermer le menu">✕</button>
+    <ul class="drawer-links">
+      <li><a href="#hero" class="drawer-link">00 / ACCUEIL</a></li>
+      <li><a href="#about" class="drawer-link" data-i18n="nav.about">01 / À PROPOS</a></li>
+      <li><a href="#experience" class="drawer-link" data-i18n="nav.experience">02 / EXPÉRIENCES</a></li>
+      <li><a href="#education" class="drawer-link" data-i18n="nav.education">03 / FORMATION</a></li>
+      <li><a href="#skills" class="drawer-link" data-i18n="nav.skills">04 / COMPÉTENCES</a></li>
+      <li><a href="#portfolio" class="drawer-link" data-i18n="nav.portfolio">05 / PROJETS</a></li>
+      <li><a href="#contact" class="drawer-link" data-i18n="nav.contact">06 / CONTACT</a></li>
+    </ul>
+  </div>
 
   <!-- ==========================================================================
        MODALS
@@ -1093,38 +751,32 @@
 
   <!-- Project Details Modal -->
   <div class="modal-overlay" id="project-modal">
-    <div class="modal-content">
-      <button class="modal-close" id="modal-close" aria-label="Fermer la modal">✕</button>
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fermer la modal">✕</button>
       <div id="modal-details">
         <!-- Injected via JavaScript -->
       </div>
     </div>
   </div>
 
-  <!-- Dedicated CV / Resume Modal (Spider-Man Styling & Clean Creative Profile) -->
+  <!-- Dedicated CV / Resume Modal -->
   <div class="modal-overlay" id="resume-modal">
-    <div class="modal-content" style="max-width: 860px; padding: 2rem;">
-      <button class="modal-close" id="resume-modal-close" aria-label="Fermer la modal">✕</button>
+    <div class="modal-content-box" style="max-width: 860px;">
+      <button class="modal-close-btn" id="resume-modal-close" aria-label="Fermer la modal">✕</button>
       
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
         <div>
-          <h2 style="font-size: 1.6rem; color: var(--text-highlight);">Curriculum Vitae</h2>
+          <h2 style="font-family: var(--font-display); font-size: 2.2rem; color: #ffffff;">Curriculum Vitae</h2>
           <p style="color: var(--text-secondary); font-size: 0.9rem;">Malakiadas Purushothaman • Médias Digitaux & Commerce International</p>
         </div>
-        <button class="btn btn-primary" id="print-resume-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-            <rect x="6" y="14" width="12" height="8"></rect>
-          </svg>
-          <span>Imprimer / PDF</span>
+        <button class="pill-btn pill-btn-primary" id="print-resume-btn" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+          Imprimer / PDF
         </button>
       </div>
 
-      <!-- CV Summary Box inside Modal -->
-      <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1.5rem;">
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--accent-primary);">MALAKIADAS PURUSHOTHAMAN</h3>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.8rem;">
+      <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-accent); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 0.4rem; color: var(--accent-primary);">MALAKIADAS PURUSHOTHAMAN</h3>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.8rem;">
           Étudiant à l’ESCE Business School – Paris (Master en Commerce International 2025–2026) | Spécialiste Médias Digitaux & Suite Adobe | Recherche un emploi à temps partiel.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--text-secondary);">
@@ -1134,22 +786,21 @@
         </div>
       </div>
 
-      <!-- Sections breakdown -->
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
         <div>
-          <h4 style="font-size: 1rem; color: var(--accent-secondary); margin-bottom: 0.8rem; text-transform: uppercase;">
+          <h4 style="font-size: 1rem; color: var(--accent-primary); margin-bottom: 0.8rem; text-transform: uppercase;">
             🎓 Formation
           </h4>
-          <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
+          <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
             <p><strong>Master Commerce International</strong> (2025 – 2026)<br>ESCE Business School – Paris</p>
             <p style="margin-top: 0.6rem;"><strong>Master en Médias Digitaux</strong> (2023 – 2025)<br>London Metropolitan University – Londres</p>
             <p style="margin-top: 0.6rem;"><strong>Bachelor Médias Digitaux & Animation</strong> (2018 – 2021)<br>St. Joseph's College – Bangalore</p>
           </div>
 
-          <h4 style="font-size: 1rem; color: var(--accent-secondary); margin-top: 1.4rem; margin-bottom: 0.8rem; text-transform: uppercase;">
+          <h4 style="font-size: 1rem; color: var(--accent-primary); margin-top: 1.4rem; margin-bottom: 0.8rem; text-transform: uppercase;">
             🎖 Certifications
           </h4>
-          <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
             <p>• DELF A1 – Diplôme d’études en langue française</p>
             <p>• Fitness Trainer Certification – ISCC</p>
           </div>
@@ -1159,7 +810,7 @@
           <h4 style="font-size: 1rem; color: var(--accent-primary); margin-bottom: 0.8rem; text-transform: uppercase;">
             💼 Expérience Professionnelle
           </h4>
-          <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
+          <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
             <p><strong>Spécialiste Médias Digitaux & Vidéo</strong> (2023 – Présent)<br>Projets Multimédia & Freelance – Londres & Paris</p>
             <p style="margin-top: 0.6rem;"><strong>Graphiste & Designer Visuel</strong> (2020 – 2021)<br>Netsteds Interior – Bangalore</p>
             <p style="margin-top: 0.6rem;"><strong>Consultant Junior en Stratégie</strong> (2025 – 2026)<br>ESCE Business School – Paris</p>
@@ -1169,7 +820,7 @@
           <h4 style="font-size: 1rem; color: var(--accent-primary); margin-top: 1.4rem; margin-bottom: 0.8rem; text-transform: uppercase;">
             🛠 Compétences Clés
           </h4>
-          <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
             <p>• <strong>Logiciels :</strong> Photoshop, Premiere Pro, Lightroom, Illustrator, MS Excel</p>
             <p>• <strong>Langues :</strong> Anglais (Courant), Français (Intermédiaire), Tamoul (Maternelle)</p>
             <p>• <strong>Savoir-être :</strong> Adaptabilité, Gestion du stress, Proactivité, Esprit d'équipe</p>
